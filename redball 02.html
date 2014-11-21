@@ -1,0 +1,163 @@
+tml>
+<head>
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script>
+function moveup()
+{
+redball.top=redball.top-5; 
+}
+
+function down()
+{
+redball.top=redball.top+5; 
+}
+function left()
+{
+redball.left=redball.left-5; 
+}
+function right()
+{
+redball.left=redball.left+5; 
+} 
+function movesquare()
+{
+
+down();
+down();
+down();
+down();
+down();
+down();
+down();
+down();
+down();
+down();
+
+right();
+right();
+right();
+right();
+right();
+right();
+right();
+right();
+right();
+right();
+
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+
+left();
+left();
+left();
+left();
+left();
+left();
+left();
+left();
+left();
+left();
+left();
+left();
+left();
+left();
+left();
+}
+function downright()
+{
+down();
+right();
+}
+function downleft()
+{
+down();
+left();
+}
+function triangle()
+{
+downright();
+downright();
+downright();
+downright();
+downright();
+downright();
+downright();
+downright();
+downright();
+downright();
+
+downleft();
+downleft();
+downleft();
+downleft();
+downleft();
+downleft();
+downleft();
+downleft();
+downleft();
+downleft();
+
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+moveup();
+}
+function upleft()
+{
+moveup();
+left();
+}
+function upright()
+{
+moveup();
+right();
+}
+
+
+
+</script>
+
+</head>
+<body>
+<table>
+<!-- this is the first row-->
+<tr>
+	<td><button onclick=upleft()><img src="redball1-005.jpg"height="50"width="50"/></button></td>
+	<td><button onclick=moveup()><img src="redball1-001.jpg"height="50"width="50"/><button><td>
+	<td><button onclick=upright()><img src="up-right.jpg"height="50"width="50"/><button></td>
+</tr><tr><!-- this is the second row-->
+	<td><button onclick=left()><img src="redball1-004.jpg"height="50"width="50"/></button></td>
+	<td><button onclick=triangle()><img src="center.jpg"height="50"width="50"/></button></td>	
+	<td><button onclick=right()><img src="redball1-002.jpg"height="50"width="50"</button></td>
+</tr><tr><!-- this is row three-->
+	<td><button onclick=downleft()><img src="downleft.jpg"height="50" width="50"/></button></td>
+	<td><button onclick=down()><img src="down.jpg"height="50" width="50"/></button></td>
+	<td><button onclick=downright()><img src="redball1-007.jpg"height="50" width="50"/></button></td></tr>
+</table>
+<img src="redball.jpg"height="50"width="50" id=redball />
+</body>
+</html>
